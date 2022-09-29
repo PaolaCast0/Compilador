@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="css/bulma/css/bulma.min.css">
+
+    <title>Analizador Lexico-Sintactico-Semántico</title>
+  </head>
+  <body>
+    <section class="hero">
+      <div class="hero-body">
+          <p class="title">
+              Lenguajes y autómatas II
+          </p>
+          <p class="subtitle">
+              Analizador LEXICO-SINTÁCTICO-SEMÁNTICO
+          </p>
+      </div><div class="columns is-mobile">
+        <div class="column is-two-thirds is-offset-2">
+      <div class="hero">
+        <div class="hero-body box">
+    <div class="container_formulario">
+      <div class="container_form">
+          <form id="container_codigo">
+            <textarea
+              class="text-body-1"
+              name="entrada"
+              placeholder="Prueba algo como const variable = 1;"
+              id="codigo"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <div class="group-buttons">
+              <button  type="submit" id="btn-compilar" >Compilar</button>
+              <button type="reset">Limpiar</button>
+            </div>
+          </form>
+      </div>
+      <div class="hero">
+        <div class="hero-body box">    
+      <div class="container_lexico">
+        <h1 class="subtitle is-4">Analizador Léxico-Semántico</h1>
+        <div id="aLexico">
+          <table>
+            <thead>
+              <tr>
+                <th class="h6">Nombre</th>
+                <th class="h6">Tipo</th>
+                <th class="h6">Código</th>
+              </tr>
+            </thead>
+            <tbody id="datos"></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+      </div>
+      <div class="hero">
+        <div class="hero-body box"> 
+      <div class="container_sintactico">
+        <h4 class="subtitle is-4">Analizador Sintáctico</h4>
+        <div id="aSintactico"></div>
+      </div>
+      </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
